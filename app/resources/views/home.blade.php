@@ -1,7 +1,50 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
+<div class="text-right">
+    <div class="btn-group">
+        <option value='' class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            グループ選択 
+        </option>
+        <button type="button" class="btn btn-outline-success" >グループ作成</button>
+        <button type="button" class="btn btn-outline-info">グループ編集</button>
+        <button type="button" class="btn btn-outline-danger">グループ削除</button>
+    </div>
+</div>
+<div class="mx-auto">
+    <div class="row justify-content-around">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <div class='text-center'>To do List</div>
+                        <button type="submit" class="btn btn-primary">リスト追加</button>
+                    </form>
+                </div>
+                <div class="card-body">
+                    <div class="card-body">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+        <div class="card">
+            <div class="card-header">
+                <div class='text-center'>日記</div>
+                <form class="d-flex justify-content-center align-items-center">
+                    <div class="form-outline flex-fill">
+                        <input type="text" id="form3" class="form-control form-control-lg"  placeholder="タイトル　カテゴリー…"/>
+                    </div>
+                <button type="button" class="btn btn-primary">検索</button> 
+            </div>
+            <div class="card-body">
+                <div class="card-body">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -19,5 +62,5 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 @endsection
