@@ -7,17 +7,16 @@
             グループ選択 
         </option>
         <button type="button" class="btn btn-outline-success" >グループ作成</button>
-        <button type="button" class="btn btn-outline-info">グループ編集</button>
-        <button type="button" class="btn btn-outline-danger">グループ削除</button>
     </div>
 </div>
+
+
 <div class="mx-auto">
     <div class="row justify-content-around">
         <div class="col-md-4">
             <div class="card">
                 <div class="card-header">
                     <div class='text-center'>To do List</div>
-                        <button type="submit" class="btn btn-primary">リスト追加</button>
                     </form>
                 </div>
                 <div class="card-body">
@@ -25,19 +24,19 @@
                     <thead>
                         <tr>
                             <th></th>
-                            <th scope='col' class= "text-center">あああ</th>
+                            <th scope='col' class= "text-center"></th>
                             <th></th>
                         </tr>
                         <tr>
                             <th></th>
-                            <th scope='col'>あ</th>
-                            <th scope='col'>い</th>
+                            <th scope='col'></th>
+                            <th scope='col'></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope='col'>
-                                <a href="">#</a>
+                                <a href=""></a>
                             </th>
                             <th scope='col'></th>
                             <th scope='col'></th>
@@ -69,24 +68,3 @@
         </div>
     </div>
 </div>
-
-<!-- <div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-@endsection
