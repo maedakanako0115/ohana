@@ -25,20 +25,19 @@
                     <thead>
                         <tr>
                             <th></th>
-                            <th scope='col' class= "text-center">あああ</th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <th scope='col'>あ</th>
-                            <th scope='col'>い</th>
+                            <th scope='col'>To do</th>
+                            <th scope='col'>担当</th>
+                            <th scope='col'>状態</th>
+                            <th scope='col'>期限</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope='col'>
-                                <a href="">#</a>
+                                <a href=""></a>
                             </th>
+                            <th scope='col'></th>
+                            <th scope='col'></th>
                             <th scope='col'></th>
                             <th scope='col'></th>
                             
