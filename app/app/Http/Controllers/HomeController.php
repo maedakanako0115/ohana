@@ -26,6 +26,16 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        $diarys=Diary::all();
+
+        return view('home',[
+            'title'=>'日記一覧',
+            'diaries'=>$diarys,
+        ]);
     }
+    // public function detail(){
+        
+    //     return view('detail.mydiary');
+    // }   
+
 }

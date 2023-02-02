@@ -62,7 +62,33 @@
             </div>
             <div class="card-body">
                 <div class="card-body">
-                <button type="submit" class="btn btn-primary">日記追加</button>
+                    <a href="{{route('diaries.create')}}"></a>
+                    <button type="submit" class="btn btn-primary" >日記追加</button>
+                </a>
+                <table class='table'>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th scope='col'>タイトル</th>
+                            <th scope='col'>日付</th>
+                            <th scope='col'>カテゴリー</th>
+                            <th scope='col'>期限</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach($diaries as $diary)
+                        <tr>
+                            <th scope='col'>
+                                <a href="">♯</a>
+                            </th>
+                            <th scope='col'>{{$diary['title']}}</th>
+                            <th scope='col'>{{$diary['date']}}</th>
+                            <th scope='col'>{{$diary['category']}}</th>
+                            <th scope='col'></th>
+                        </tr>
+                        @endforeach
+                    </tbody>
+                </table>
                 </div>
             </div>
         </div>
