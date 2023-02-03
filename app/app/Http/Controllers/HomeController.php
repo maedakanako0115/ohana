@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 use App\User;
 use App\Diary;
+use App\Todolist;
 use App\Group;
 
 use Illuminate\Http\Request;
@@ -27,10 +28,13 @@ class HomeController extends Controller
     public function index()
     {
         $diarys=Diary::all();
+        $lists=Todolist::all();
+
 
         return view('home',[
             'title'=>'日記一覧',
             'diaries'=>$diarys,
+            'todolists'=>$lists,
         ]);
     }
     // public function detail(){

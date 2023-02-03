@@ -23,7 +23,4 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/diary/{id}/detail','HomeController@detail')->name('diaries.detail');
-Route::get('/diary/create','RegistrationController@create')->name('diaries.create');
-Route::get('/diary/{id}/edit','RegistrationController@edit')->name('diaries.edit');
-Route::get('/diary/{id}','RegistrationController@destroy')->name('diaries.destroy');
+Route::resource('/diarys', 'DiaryController');

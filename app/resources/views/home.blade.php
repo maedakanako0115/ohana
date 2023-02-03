@@ -32,17 +32,18 @@
                         </tr>
                     </thead>
                     <tbody>
+                    @foreach($todolists as $todolist)
                         <tr>
                             <th scope='col'>
                                 <a href=""></a>
                             </th>
+                            <th scope='col'>{{$todolist['list_name']}}</th>
+                            <th scope='col'>{{$todolist['assign_personname']}}</th>
                             <th scope='col'></th>
-                            <th scope='col'></th>
-                            <th scope='col'></th>
-                            <th scope='col'></th>
-                            
+                            <th scope='col'>{{$todolist['deadline']}}</th>
                         </tr>
                     </tbody>
+                    @endforeach
                 </table>
 
                     <div class="card-body">
@@ -62,7 +63,7 @@
             </div>
             <div class="card-body">
                 <div class="card-body">
-                    <a href="{{route('diaries.create')}}"></a>
+                    <a href="{{url('diarys/create')}}">
                     <button type="submit" class="btn btn-primary" >日記追加</button>
                 </a>
                 <table class='table'>
@@ -79,7 +80,7 @@
                         @foreach($diaries as $diary)
                         <tr>
                             <th scope='col'>
-                                <a href="">♯</a>
+                                <a href="{{url('diarys/{diary}/edit')}}">♯</a>
                             </th>
                             <th scope='col'>{{$diary['title']}}</th>
                             <th scope='col'>{{$diary['date']}}</th>
